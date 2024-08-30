@@ -2,23 +2,26 @@
   <div class="app">
     <div class="blog">
       <div class="blog-part is-menu">
-        <a href="#" class="blog-menu">
-          Work
+        <a href="https://www.instagram.com/scp_hank/" class="blog-menu">
+          IG
           <svg fill="none" stroke="currentColor" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round"
             class="feather feather-arrow-up-right" viewBox="0 0 24 24">
             <path d="M7 17L17 7M7 7h10v10" />
           </svg>
         </a>
-        <a href="#" class="blog-menu">Studio</a>
-        <a href="#" class="blog-menu">Blog</a>
-        <a href="#" class="blog-menu">Contact</a>
-        <a href="#" class="blog-menu mention">@MagazineDope</a>
-        <a href="#" class="blog-menu subscribe">Subscribe</a>
+        <a href="https://github.com/24626982" class="blog-menu">GitHub</a>
+        <a href="https://www.linkedin.com/in/scphank0108" class="blog-menu">Linkedin</a>
+        <a href="https://www.youtube.com/@SCP-RED" class="blog-menu">YouTube</a>
+        <a href="#" class="blog-menu mention">@PersonalBlog</a>
+        <a href="mailto:hank50380@gmail.com" class="blog-menu subscribe">Email</a>
       </div>
       <div class="blog-header blog-is-sticky">
         <div class="blog-article header-article">
-          <div class="blog-big__title">Self</div>
-          <div class="blog-menu rounded small-title">Pinned Issue</div>
+          <div class="blog-big__title">SCP</div>
+          <div class="blog-menu rounded small-title">Daily complaints</div>
+        </div>
+        <div class="blog-article daily-complaints">
+          連會議記錄都不做，就在一旁耍白癡，還以為自己很重要，真的很可悲
         </div>
         <div class="blog-article page-number">
           NO. 01
@@ -27,8 +30,8 @@
       <div class="blog-header-container">
         <div class="blog-header">
           <div class="blog-article header-article">
-            <div class="blog-big__title">Esteem</div>
-            <div class="blog-menu small-title date">12.06.2021</div>
+            <div class="blog-big__title">Hank</div>
+            <div class="blog-menu small-title date">{{ fromtime }}</div>
           </div>
           <div class="blog-article">
             <img
@@ -82,7 +85,7 @@
         <div class="blog-header">
           <div class="blog-article header-article">
             <div class="blog-big__title">Control</div>
-            <div class="blog-menu small-title date">12.06.2021</div>
+            <div class="blog-menu small-title date">{{ fromtime }}</div>
           </div>
           <div class="blog-article">
             <img
@@ -187,18 +190,18 @@
 
 <script lang="ts">
 import { defineComponent, reactive, ref, toRefs } from 'vue';
-import Job from './types/Job';
 
 export default defineComponent({
+  
   setup() {
-    const jobs = ref<Job[]>([
-      { title: 'Boss', location: 'TW', salary: 60000, id: '007' }
-    ])
-    return { jobs }
-  },
+    let today_Date: Date = new Date();
+    let fromtime: string = today_Date.toLocaleString();
+    return {fromtime}
+    },
   methods: {
 
-  }
+  },
+
 })
 </script>
 
