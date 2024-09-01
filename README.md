@@ -3,7 +3,7 @@
 # Python v3.12.5
 # Django v5.1
 I have packaged it in the back-end virtual environment, you don’t need to download it
-## introduce
+## Introduce
 這是我的個人部落格，我把它做得像一張報紙，因為我有很大的概率會發表我對某些事的看法。
 
 
