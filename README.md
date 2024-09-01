@@ -12,11 +12,15 @@ This is my personal blog. I make it like a newspaper because there is a high pro
 
 ## How to enable
 首先你需要確認是否下載了以上我告知的程式版本，我會將前端和後端的套件打包好，但你仍須下載virtualenv才可在後端啟用虛擬環境。
-前端啟用：cd \front-end ---> 輸入npm run serve
-後端啟用：cd \back-end\venv\Scripts\ ---> 輸入activate(啟用虛擬環境) ---> cd \DjangoAPI ---> 輸入python .\manage.py runserver
+###前端啟用
+cd \front-end ---> 輸入npm run serve
+###後端啟用
+cd \back-end\venv\Scripts\ ---> 輸入activate(啟用虛擬環境) ---> cd \DjangoAPI ---> 輸入python .\manage.py runserver
 
 
 First, you need to make sure you have downloaded the program version I told you above. I will package the front-end and back-end packages, but you still need to download virtualenv to enable the virtual environment on the back-end.
-Front-end enablement: cd \front-end ---> enter npm run serve
-Backend activation: cd \back-end\venv\Scripts\ ---> Enter activate (enable virtual environment) ---> cd \DjangoAPI ---> Enter python .\manage.py runserver
+###Front-end enablement:
+cd \front-end ---> enter npm run serve
+###Backend enablement:
+cd \back-end\venv\Scripts\ ---> Enter activate (enable virtual environment) ---> cd \DjangoAPI ---> Enter python .\manage.py runserver
 
